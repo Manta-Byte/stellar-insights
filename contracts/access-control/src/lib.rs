@@ -44,6 +44,7 @@ pub struct Permission {
 }
 
 #[contracttype]
+#[derive(Clone, Debug, Eq, PartialEq)]
 pub enum DataKey {
     Roles(Address),
     Permissions(Role),
